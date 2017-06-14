@@ -71,11 +71,11 @@ header, main {
         url('../fonts/Lato-Regular.woff') format('woff');
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Lato Bold';
   src:  url('../fonts/Lato-Bold.woff2') format('woff2'),
         url('../fonts/Lato-Bold.woff') format('woff');
-}
+}*/
 
 @font-face {
   font-family: 'Lato Black';

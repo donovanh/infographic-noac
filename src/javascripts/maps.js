@@ -1,17 +1,3 @@
-/******************************************************* *
-**
-** Function to load SVG safely using AJAX,
-** including fallback to png files when
-** SVG is not supported
-**
-** Pass the selector and the URL of the files
-** without its extenstion as the function
-** will take care of it.
-**
-** Based on http://css-tricks.com/ajaxing-svg-sprite/
-**
-* *******************************************************/
-
 // Set up the data values
 var data = [
   {
