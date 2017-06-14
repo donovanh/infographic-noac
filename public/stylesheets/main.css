@@ -82,20 +82,20 @@ header, main {
 
 @font-face {
   font-family: 'Lato Regular';
-  src: url('/fonts/LatoLatin-Regular.woff2') format('woff2'),
-        url('/fonts/LatoLatin-Regular.woff') format('woff');
+  src: url('../fonts/LatoLatin-Regular.woff2') format('woff2'),
+        url('../fonts/LatoLatin-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato Bold';
-  src: url('/fonts/LatoLatin-Bold.woff2') format('woff2'),
-        url('/fonts/LatoLatin-Bold.woff') format('woff');
+  src: url('../fonts/LatoLatin-Bold.woff2') format('woff2'),
+        url('../fonts/LatoLatin-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato Black';
-  src: url('/fonts/LatoLatin-Black.woff2') format('woff2'),
-        url('/fonts/LatoLatin-Black.woff') format('woff');
+  src: url('../fonts/LatoLatin-Black.woff2') format('woff2'),
+        url('../fonts/LatoLatin-Black.woff') format('woff');
 }
 
 html {
