@@ -5,7 +5,7 @@ function loadSvg(selector, svgname, url, cb) {
   if (typeof SVGRect != "undefined") {
     // Request the SVG file
     var ajax = new XMLHttpRequest();
-    ajax.open("GET", "/images/" + svgname + ".svg", true);
+    ajax.open("GET", "./images/" + svgname + ".svg", true);
     ajax.send();
 
     // Append the SVG to the target
