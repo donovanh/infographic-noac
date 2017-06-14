@@ -499,7 +499,7 @@ function buildMap(map) {
 function buildLegend(map) {
   // Set gradient on info-map-legend-bar for this map
   console.log('here');
-  var startColour = "hsl("+ map.startHue +", 100%, 50%)";
+  var startColour = "hsla("+ map.startHue +", 100%, 50%, .2)";
   var endColour = "hsl("+ map.endHue +", 100%, 50%)";
   var gradient = "linear-gradient(to right, "+ startColour +", "+ endColour +")";
   var legend = document.querySelector("#" + map.mapName + "-container .info-map-legend-bar");
