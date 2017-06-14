@@ -81,21 +81,27 @@ header, main {
 /* Text styles */
 
 @font-face {
+  font-family: 'Lato Thin';
+  src: url('../fonts/Lato-Thin.woff2') format('woff2'),
+        url('../fonts/Lato-Thin.woff') format('woff');
+}
+
+@font-face {
   font-family: 'Lato Regular';
-  src: url('../fonts/LatoLatin-Regular.woff2') format('woff2'),
-        url('../fonts/LatoLatin-Regular.woff') format('woff');
+  src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato Bold';
-  src: url('../fonts/LatoLatin-Bold.woff2') format('woff2'),
-        url('../fonts/LatoLatin-Bold.woff') format('woff');
+  src: url('../fonts/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato Black';
-  src: url('../fonts/LatoLatin-Black.woff2') format('woff2'),
-        url('../fonts/LatoLatin-Black.woff') format('woff');
+  src: url('../fonts/Lato-Black.woff2') format('woff2'),
+        url('../fonts/Lato-Black.woff') format('woff');
 }
 
 html {
@@ -196,6 +202,8 @@ footer li:first-child::before {
           transform: translateY(0) !important;
 }
 
+/* Header parts */
+
 .top-image-container {
   pointer-events: none;
   position: absolute;
@@ -224,11 +232,15 @@ footer li:first-child::before {
   font-size: 30pt;
   font-weight: 900;
   padding-top: 220px;
+
+  font-variant-numeric: oldstyle-nums;
 }
 
 .legend-number {
   font-family: 'Lato Black', sans-serif;
   font-weight: 900;
+
+  font-variant-numeric: oldstyle-nums;
 }
 
 header {
@@ -264,12 +276,14 @@ header {
   padding-left: 5em;
 }
 
-.stats-books-borrowed-total {
+.stats-books-borrowed-total, .stats-books-visits-per-head {
   color: #91C34E;
-  font-family: 'Lato Regular';
+  font-family: 'Lato Thin';
   font-size: 100pt;
   margin: .4em 0;
   padding-bottom: 12px;
+
+  font-variant-numeric: oldstyle-nums;
 }
 
 .stats-body {

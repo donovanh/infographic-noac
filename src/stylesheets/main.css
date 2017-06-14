@@ -13,6 +13,8 @@
   transform: translateY(0) !important;
 }
 
+/* Header parts */
+
 .top-image-container {
   position: absolute;
   pointer-events: none;
@@ -41,11 +43,13 @@
   font-weight: 900;
   font-size: 30pt;
   padding-top: 220px;
+  font-variant-numeric: oldstyle-nums;
 }
 
 .legend-number {
   font-family: 'Lato Black', sans-serif;
   font-weight: 900;
+  font-variant-numeric: oldstyle-nums;
 }
 
 header {
@@ -81,9 +85,11 @@ header {
   padding-left: 5em;
 }
 
-.stats-books-borrowed-total {
+.stats-books-borrowed-total,
+.stats-books-visits-per-head {
   font-size: 100pt;
-  font-family: 'Lato Regular';
+  font-family: 'Lato Thin';
+  font-variant-numeric: oldstyle-nums;
   color: #91C34E;
   margin: .4em 0;
   padding-bottom: 12px;
