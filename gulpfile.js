@@ -34,6 +34,11 @@ gulp.task("zips", function() {
     .pipe(gulp.dest("public/"));
 });
 
+gulp.task("fonts", function() {
+  return gulp.src(["./src/fonts/*"])
+    .pipe(gulp.dest("public/fonts/"));
+});
+
 gulp.task("video", function() {
   return gulp.src(["./src/**/*.mp4", "./src/**/*.webm"])
     .pipe(gulp.dest("public/"));
@@ -87,4 +92,4 @@ gulp.task("watch", function() {
   gulp.watch("src/**/*.webm", ["video"]);
 });
 
-gulp.task("default", ["html","js","css","images","browser-sync","zips","video","watch"]);
+gulp.task("default", ["html","js","css","images","fonts","browser-sync","zips","video","watch"]);

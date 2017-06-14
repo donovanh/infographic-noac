@@ -1,2 +1,233 @@
-@import "settings";
 @import "default";
+
+/* Custom styling for this infographic page */
+
+/* General animations */
+
+.fade-up {
+  transform: translateY(18px);
+  transition: all .5s ease-out;
+}
+
+.is-visible {
+  transform: translateY(0) !important;
+}
+
+.top-image-container {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.top-image-container svg {
+  width: 420px;
+  height: 525px;
+}
+
+.books-container {
+  position: absolute;
+  pointer-events: none;
+  top: 435px;
+  left: 60px;
+}
+
+.books-container svg {
+  height: 120px;
+  width: 330px;
+}
+
+.year {
+  font-family: 'Lato Black', sans-serif;
+  font-weight: 900;
+  font-size: 30pt;
+  padding-top: 220px;
+}
+
+.legend-number {
+  font-family: 'Lato Black', sans-serif;
+  font-weight: 900;
+}
+
+header {
+  height: 540px;
+}
+
+.page-title {
+  background: #fff;
+  border-top: 1px solid #B3B3B3;
+  border-bottom: 3px solid #B3B3B3;
+  padding: .5em 0;
+  margin: 6px 0;
+}
+
+.stats-heading {
+  border-bottom: 1px solid #B3B3B3;
+}
+
+.stats-heading-title {
+  padding: 0;
+  color: #808080;
+}
+
+.stats-heading-content {
+  border-top: 1px solid #B3B3B3;
+  color: #808080;
+  padding: .3em 0;
+  margin-top: .5em;
+}
+
+.best-read {
+  margin-top: -100px;
+  padding-left: 5em;
+}
+
+.stats-books-borrowed-total {
+  font-size: 100pt;
+  font-family: 'Lato Regular';
+  color: #91C34E;
+  margin: .4em 0;
+  padding-bottom: 12px;
+}
+
+.stats-body {
+  border-bottom: 3px solid #B3B3B3;
+}
+
+/* Info section */
+
+.info .col {
+  margin: 3em 0;
+  padding: 0 1.5em;
+  border-right: 1px solid #B3B3B3;
+}
+
+.info .col:last-child {
+  border-right: none;
+}
+
+/* Info Icons */
+
+.info-icon {
+  height: 102px;
+  width: 70px;
+}
+
+.icon-visits-per-head {
+  background: url(../images/icon_visits_per_head.svg) no-repeat;
+  background-size: cover;
+}
+
+.icon-items-issued {
+  background: url(../images/icon_items_issued.svg) no-repeat;
+  background-size: cover;
+  width: 75px;
+}
+
+.icon-cost-per-capita {
+  background: url(../images/icon_cost_per_capita.svg) no-repeat;
+  background-size: cover;
+  width: 103px;
+}
+
+/* Info maps */
+
+.info-map {
+  width: 100%;
+  min-height: 400px;
+}
+
+.info-map svg {
+  width: 100%;
+  margin-left: -5%;
+}
+
+.info-map-legend {
+  margin: 2em 16px -.75em;
+}
+
+.info-map-legend-bar {
+  width: 100%;
+  height: 12px;
+}
+
+.info-map-legend-labels {
+  display: flex;
+  justify-content: space-between
+}
+
+.legend-number {
+  margin: 8px 0;
+}
+
+/* Data table */
+
+.data-table table {
+  border-collapse: collapse;
+  max-width: 70%;
+}
+
+.data-table thead {
+  background: green;
+  color: #fff;
+}
+
+.data-table thead th {
+  background: #99C355;
+  border: 1px solid #fff;
+  padding: 2em 1em 1em;
+  vertical-align: bottom;
+}
+
+.data-table thead th:nth-child(even) {
+  background: #96A773;
+}
+
+.data-table th {
+  font-family: 'Lato Black';
+  text-align: left;
+}
+
+.data-table tbody {
+  padding-top: 5px;
+}
+
+.data-table tbody th,
+.data-table tfoot th {
+  padding-left: 1em;
+}
+
+.data-table tbody,
+.data-table tbody th {
+  border: 1px solid #D6D6D6;
+}
+
+.data-table td {
+  border: 1px solid #D6D6D6;
+  padding: 14px;
+  text-align: right;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #E1EEC0;
+}
+
+.data-table tfoot th {
+  background-color: #99C355;
+  color: #fff;
+}
+
+.data-table tfoot .total {
+  color: #fff;
+  font-family: 'Lato Black';
+  background-color: #F44C6C;
+}
+
+.data-table tfoot th,
+.data-table tfoot td {
+  border: none;
+}
+
+
+
+
+
