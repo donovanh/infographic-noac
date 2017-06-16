@@ -12,6 +12,7 @@ animate();
 
 function init(countUp) {
   var targetNumber = parseFloat(countUp.innerText.replace(/\,/g, ''));
+  countUp.innerText = '';
   // Get the precision needed, and create that as an offset
   var splitString = targetNumber.toString().split(".")
   if (splitString[1]) {

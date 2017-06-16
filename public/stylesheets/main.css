@@ -266,8 +266,8 @@ footer li:first-child::before {
 
 .book-roof-leaves {
   opacity: 0;
-  -webkit-transform: rotateZ(-65deg);
-          transform: rotateZ(-65deg);
+  -webkit-transform: rotateZ(-180deg) scale(0);
+          transform: rotateZ(-180deg) scale(0);
   -webkit-transform-origin: 100px 90px;
           transform-origin: 100px 90px;
 }
@@ -304,24 +304,9 @@ footer li:first-child::before {
 }
 
 .is-visible .book-roof-leaves {
-  -webkit-animation: no-transform 2s 3s cubic-bezier(0,1.2,.1,1) forwards;
-  animation: no-transform 2s 3s cubic-bezier(0,1.2,.1,1) forwards;
+  -webkit-animation: no-transform 3s 3.4s cubic-bezier(0,1.2,.1,1) forwards;
+  animation: no-transform 3s 3.4s cubic-bezier(0,1.2,.1,1) forwards;
 }
-
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotateZ(260deg);
-            transform: rotateZ(260deg);
-  }
-}
-
-@keyframes spin {
-  to {
-    -webkit-transform: rotateZ(260deg);
-            transform: rotateZ(260deg);
-  }
-}
-
 
 @-webkit-keyframes no-transform {
   to {
@@ -330,7 +315,6 @@ footer li:first-child::before {
             transform: none;
   }
 }
-
 
 @keyframes no-transform {
   to {
@@ -388,6 +372,43 @@ footer li:first-child::before {
   }
 }
 
+/* County map animations */
+
+.show-county {
+  opacity: .1;
+}
+
+.is-visible .show-county {
+  -webkit-animation: show-county .2s linear forwards;
+          animation: show-county .2s linear forwards;
+}
+
+@-webkit-keyframes show-county {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-county {
+  to {
+    opacity: 1;
+  }
+}
+
+.info-map-legend-bar {
+  height: 12px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  transition: all 2.8s ease-out;
+}
+
+.is-visible .info-map-legend-bar {
+  -webkit-transform: none;
+          transform: none;
+}
+
 /* Header parts */
 
 .top-image-container {
@@ -412,11 +433,6 @@ footer li:first-child::before {
   position: absolute;
   top: 0;
 }
-
-/*.books-container svg {
-  height: 120px;
-  width: 330px;
-}*/
 
 .year {
   font-family: 'Lato Black', sans-serif;
@@ -533,11 +549,6 @@ header {
 
 .info-map-legend {
   margin: 2em 16px -.75em;
-}
-
-.info-map-legend-bar {
-  height: 12px;
-  width: 100%;
 }
 
 .info-map-legend-labels {

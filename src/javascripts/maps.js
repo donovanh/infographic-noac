@@ -2,7 +2,7 @@
 var data = [
   {
     mapName: "map1",
-    startHue: 181,
+    startHue: 180,
     endHue: 238,
     counties: [
       {
@@ -43,7 +43,7 @@ var data = [
       },
       {
         name: "Galway City",
-        value: "n/a" 
+        value: "2.54" 
       },
       {
         name: "Galway County",
@@ -174,7 +174,7 @@ var data = [
       },
       {
         name: "Galway City",
-        value: "n/a" 
+        value: "691893" 
       },
       {
         name: "Galway County",
@@ -264,8 +264,8 @@ var data = [
   },
   {
     mapName: "map3",
-    startHue: 56,
-    endHue: 128,
+    startHue: 80,
+    endHue: 155,
     counties: [
       {
         name: "Carlow County",
@@ -305,7 +305,7 @@ var data = [
       },
       {
         name: "Galway City",
-        value: "n/a" 
+        value: "17.82" 
       },
       {
         name: "Galway County",
@@ -462,8 +462,8 @@ function buildMap(map) {
       if (hue > 360) {
         hue = hue - 360;
       }
-      var saturation = 100 - offset / 10;
-      var opacity = 1 - (100 - offset * 5) / 100;
+      var saturation = 100 - offset / 3;
+      var opacity = 1 - (50 - offset * 6) / 100;
       if (opacity < .1) { opacity = .2; }
       var hsl = "hsla("+ Math.round(hue) +", "+ saturation +"%, 50%, "+ opacity +")";
     } else {
@@ -478,13 +478,40 @@ function buildMap(map) {
     var countyLayer = document.querySelector("#" + map.mapName + " ." + countyClass);
     if (countyLayer) {
       countyLayer.setAttribute("fill", hsl);
+      countyLayer.classList.add("show-county");
+      if (offset < 10) {
+        var delayTime = 1;
+      } else if (offset < 20) {
+        var delayTime = 1.2;
+      } else if (offset < 30) {
+        var delayTime = 1.4;
+      } else if (offset < 40) {
+        var delayTime = 1.6;
+      } else if (offset < 50) {
+        var delayTime = 1.8;
+      } else if (offset < 60) {
+        var delayTime = 2;
+      } else if (offset < 70) {
+        var delayTime = 2.2;
+      } else if (offset < 80) {
+        var delayTime = 2.4;
+      } else if (offset < 90) {
+        var delayTime = 2.6;
+      } else {
+        var delayTime = 2.8;
+      }
+      countyLayer.style.animationDelay = delayTime +"s";
     }
   });
 }
 
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
 function buildLegend(map) {
   // Set gradient on info-map-legend-bar for this map
-  var startColour = "hsla("+ map.startHue +", 100%, 50%, .2)";
+  var startColour = "hsla("+ map.startHue +", 100%, 50%, .5)";
   var endColour = "hsl("+ map.endHue +", 100%, 50%)";
   var gradient = "linear-gradient(to right, "+ startColour +", "+ endColour +")";
   var legend = document.querySelector("#" + map.mapName + "-container .info-map-legend-bar");
