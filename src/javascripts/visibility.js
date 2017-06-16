@@ -2,10 +2,9 @@
 var scroll = window.requestAnimationFrame ||
              // IE Fallback
              function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 
 function loop() {
-
+  var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
   elementsToShow.forEach(function (element) {
     if (isElementInViewport(element)) {
       element.classList.add('is-visible');

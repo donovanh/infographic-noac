@@ -1,7 +1,7 @@
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 body {
-  margin: 0;
+  margin: 0 0 12em;
 }
 
 article, aside, footer, header, nav, section, figcaption, figure, main {
@@ -192,12 +192,26 @@ footer li:first-child::before {
 /* General animations */
 
 .fade-up {
+  opacity: 0;
   -webkit-transform: translateY(18px);
           transform: translateY(18px);
   transition: all .5s ease-out;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+
+.fade-zoom {
+  opacity: 0;
+  -webkit-transform: scale(.8);
+          transform: scale(.8);
+  transition: all .5s cubic-bezier(0,1.5,1,1);
+}
+
 .is-visible {
+  opacity: 1;
   -webkit-transform: translateY(0) !important;
           transform: translateY(0) !important;
 }
@@ -211,56 +225,113 @@ footer li:first-child::before {
 }
 
 .is-visible .books-container .book-orange {
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
+  -webkit-animation-delay: 3.4s;
+  animation-delay: 3.4s;
 }
 
 .is-visible .books-container .book-red {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 .is-visible .books-container .book-grey {
-  -webkit-animation-delay: 2.3s;
-  animation-delay: 2.3s;
+  -webkit-animation-delay: 4.3s;
+  animation-delay: 4.3s;
 }
 
 .is-visible .books-container .book-yellow {
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 
 .is-visible .books-container .book-green {
-  -webkit-animation-delay: 2.7s;
-  animation-delay: 2.7s;
+  -webkit-animation-delay: 4.7s;
+  animation-delay: 4.7s;
 }
 
 .is-visible .books-container .book-blue {
-  -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s;
+  -webkit-animation-delay: 4.8s;
+  animation-delay: 4.8s;
 }
 
 /* Top image animations */
 
-.ground {
+.ground, .front-tree, .back-tree, .library-building, .book-roof {
   -webkit-transform: translateY(-500px);
           transform: translateY(-500px);
 }
 
-.is-visible .ground {
-  -webkit-animation: no-transform 1s .5s cubic-bezier(0,1,.1,1) forwards;
-  animation: no-transform 1s .5s cubic-bezier(0,1,.1,1) forwards;
+.book-roof-leaves {
+  opacity: 0;
+  -webkit-transform: rotateZ(-65deg);
+          transform: rotateZ(-65deg);
+  -webkit-transform-origin: 100px 90px;
+          transform-origin: 100px 90px;
 }
+
+.front-tree-shadow, .back-tree-shadow, .library-building-shadow {
+  opacity: 0;
+  -webkit-transform: translateY(-200px) translateX(200px);
+          transform: translateY(-200px) translateX(200px);
+}
+
+.is-visible .ground {
+  -webkit-animation: no-transform .7s .5s cubic-bezier(0,1.2,.1,1) forwards;
+  animation: no-transform .7s .5s cubic-bezier(0,1.2,.1,1) forwards;
+}
+
+.is-visible .front-tree, .is-visible .front-tree-shadow {
+  -webkit-animation: no-transform .7s 1s cubic-bezier(0,1.2,.1,1) forwards;
+  animation: no-transform .7s 1s cubic-bezier(0,1.2,.1,1) forwards;
+}
+
+.is-visible .back-tree, .is-visible .back-tree-shadow {
+  -webkit-animation: no-transform .7s 1.5s cubic-bezier(0,1.2,.1,1) forwards;
+  animation: no-transform .7s 1.5s cubic-bezier(0,1.2,.1,1) forwards;
+}
+
+.is-visible .library-building, .is-visible .library-building-shadow {
+  -webkit-animation: no-transform .7s 2s cubic-bezier(0,1.2,.1,1) forwards;
+  animation: no-transform .7s 2s cubic-bezier(0,1.2,.1,1) forwards;
+}
+
+.is-visible .book-roof {
+  -webkit-animation: no-transform .7s 2.5s cubic-bezier(0,1,.1,1) forwards;
+  animation: no-transform .7s 2.5s cubic-bezier(0,1,.1,1) forwards;
+}
+
+.is-visible .book-roof-leaves {
+  -webkit-animation: no-transform 2s 3s cubic-bezier(0,1.2,.1,1) forwards;
+  animation: no-transform 2s 3s cubic-bezier(0,1.2,.1,1) forwards;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotateZ(260deg);
+            transform: rotateZ(260deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotateZ(260deg);
+            transform: rotateZ(260deg);
+  }
+}
+
 
 @-webkit-keyframes no-transform {
   to {
+    opacity: 1;
     -webkit-transform: none;
             transform: none;
   }
 }
 
+
 @keyframes no-transform {
   to {
+    opacity: 1;
     -webkit-transform: none;
             transform: none;
   }
@@ -322,9 +393,14 @@ footer li:first-child::before {
   z-index: 0;
 }
 
-.top-image-container svg, .books-container svg {
-  height: 525px;
-  width: 420px;
+.top-image-container svg {
+  height: 625px;
+  width: 900px;
+}
+
+.books-container svg {
+  height: 625px;
+  width: 900px;
 }
 
 .books-container {

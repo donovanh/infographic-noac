@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="296px" height="388px" viewBox="0 0 296 388" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="896px" height="388px" viewBox="0 0 680 458" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <linearGradient x1="49.9900858%" y1="-0.00625848581%" x2="49.9900858%" y2="100.006465%" id="linearGradient-1">
             <stop stop-color="#8CC63F" offset="0%"></stop>
@@ -125,71 +125,71 @@
             <g class="book-roof-leaves">
                 <g transform="translate(68.000000, 52.000000)">
                     <g transform="translate(1.000000, 36.000000)" stroke-linecap="round" stroke-width="0.9921" stroke="#E6E6E6">
-                        <path d="M24.4,0.6 L36.6,39.7" id="Shape"></path>
-                        <path d="M24.4,0.6 L38.2,39.7" id="Shape"></path>
-                        <path d="M24.4,0.6 L39.8,39.7" id="Shape"></path>
-                        <path d="M24.4,0.6 L41.4,39.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L43,39.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L44.5,38.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L46,37.8" id="Shape"></path>
-                        <path d="M24.4,0.6 L47.5,36.9" id="Shape"></path>
-                        <path d="M24.4,0.6 L48.5,35.4" id="Shape"></path>
-                        <path d="M24.4,0.6 L35.1,39.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L33.5,39.2" id="Shape"></path>
-                        <path d="M24.4,0.6 L32,38.8" id="Shape"></path>
-                        <path d="M24.4,0.6 L30.4,38.3" id="Shape"></path>
-                        <path d="M24.4,0.6 L28.8,37.7" id="Shape"></path>
-                        <path d="M24.4,0.6 L27.3,37.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L25.9,36.3" id="Shape"></path>
-                        <path d="M24.4,0.6 L24.4,35.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L22.5,34.3" id="Shape"></path>
-                        <path d="M24.4,0.6 L20.7,33.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L19,31.9" id="Shape"></path>
-                        <path d="M24.4,0.6 L17.5,30.6" id="Shape"></path>
-                        <path d="M24.4,0.6 L16,29.3" id="Shape"></path>
-                        <path d="M24.4,0.6 L14.6,28" id="Shape"></path>
-                        <path d="M24.4,0.6 L13.4,26.8" id="Shape"></path>
-                        <path d="M24.4,0.6 L12.2,25.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L11,24.3" id="Shape"></path>
-                        <path d="M24.4,0.6 L9.8,22.8" id="Shape"></path>
-                        <path d="M24.4,0.6 L8.4,21.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L5.3,16.8" id="Shape"></path>
-                        <path d="M24.4,0.6 L3.6,14.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L1.8,11" id="Shape"></path>
-                        <path d="M24.4,0.6 L0.3,7.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L36.6,39.7" id="Shape"></path>
-                        <path d="M24.4,0.6 L38.2,39.7" id="Shape"></path>
-                        <path d="M24.4,0.6 L39.8,39.7" id="Shape"></path>
-                        <path d="M24.4,0.6 L41.4,39.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L43,39.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L44.5,38.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L46,37.8" id="Shape"></path>
-                        <path d="M24.4,0.6 L47.5,36.9" id="Shape"></path>
-                        <path d="M24.4,0.6 L48.5,35.4" id="Shape"></path>
-                        <path d="M24.4,0.6 L35.1,39.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L33.5,39.2" id="Shape"></path>
-                        <path d="M24.4,0.6 L32,38.8" id="Shape"></path>
-                        <path d="M24.4,0.6 L30.4,38.3" id="Shape"></path>
-                        <path d="M24.4,0.6 L28.8,37.7" id="Shape"></path>
-                        <path d="M24.4,0.6 L27.3,37.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L25.9,36.3" id="Shape"></path>
-                        <path d="M24.4,0.6 L24.4,35.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L22.5,34.3" id="Shape"></path>
-                        <path d="M24.4,0.6 L20.7,33.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L19,31.9" id="Shape"></path>
-                        <path d="M24.4,0.6 L17.5,30.6" id="Shape"></path>
-                        <path d="M24.4,0.6 L16,29.3" id="Shape"></path>
-                        <path d="M24.4,0.6 L14.6,28" id="Shape"></path>
-                        <path d="M24.4,0.6 L13.4,26.8" id="Shape"></path>
-                        <path d="M24.4,0.6 L12.2,25.5" id="Shape"></path>
-                        <path d="M24.4,0.6 L11,24.3" id="Shape"></path>
-                        <path d="M24.4,0.6 L9.8,22.8" id="Shape"></path>
-                        <path d="M24.4,0.6 L8.4,21.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L6.9,19.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L5.3,16.8" id="Shape"></path>
-                        <path d="M24.4,0.6 L3.6,14.1" id="Shape"></path>
-                        <path d="M24.4,0.6 L1.8,11" id="Shape"></path>
-                        <path d="M24.4,0.6 L0.3,7.5" id="Shape"></path>
+                        <path d="M24.4,0.6 L36.6,39.7"></path>
+                        <path d="M24.4,0.6 L38.2,39.7"></path>
+                        <path d="M24.4,0.6 L39.8,39.7"></path>
+                        <path d="M24.4,0.6 L41.4,39.5"></path>
+                        <path d="M24.4,0.6 L43,39.1"></path>
+                        <path d="M24.4,0.6 L44.5,38.5"></path>
+                        <path d="M24.4,0.6 L46,37.8"></path>
+                        <path d="M24.4,0.6 L47.5,36.9"></path>
+                        <path d="M24.4,0.6 L48.5,35.4"></path>
+                        <path d="M24.4,0.6 L35.1,39.5"></path>
+                        <path d="M24.4,0.6 L33.5,39.2"></path>
+                        <path d="M24.4,0.6 L32,38.8"></path>
+                        <path d="M24.4,0.6 L30.4,38.3"></path>
+                        <path d="M24.4,0.6 L28.8,37.7"></path>
+                        <path d="M24.4,0.6 L27.3,37.1"></path>
+                        <path d="M24.4,0.6 L25.9,36.3"></path>
+                        <path d="M24.4,0.6 L24.4,35.5"></path>
+                        <path d="M24.4,0.6 L22.5,34.3"></path>
+                        <path d="M24.4,0.6 L20.7,33.1"></path>
+                        <path d="M24.4,0.6 L19,31.9"></path>
+                        <path d="M24.4,0.6 L17.5,30.6"></path>
+                        <path d="M24.4,0.6 L16,29.3"></path>
+                        <path d="M24.4,0.6 L14.6,28"></path>
+                        <path d="M24.4,0.6 L13.4,26.8"></path>
+                        <path d="M24.4,0.6 L12.2,25.5"></path>
+                        <path d="M24.4,0.6 L11,24.3"></path>
+                        <path d="M24.4,0.6 L9.8,22.8"></path>
+                        <path d="M24.4,0.6 L8.4,21.1"></path>
+                        <path d="M24.4,0.6 L5.3,16.8"></path>
+                        <path d="M24.4,0.6 L3.6,14.1"></path>
+                        <path d="M24.4,0.6 L1.8,11"></path>
+                        <path d="M24.4,0.6 L0.3,7.5"></path>
+                        <path d="M24.4,0.6 L36.6,39.7"></path>
+                        <path d="M24.4,0.6 L38.2,39.7"></path>
+                        <path d="M24.4,0.6 L39.8,39.7"></path>
+                        <path d="M24.4,0.6 L41.4,39.5"></path>
+                        <path d="M24.4,0.6 L43,39.1"></path>
+                        <path d="M24.4,0.6 L44.5,38.5"></path>
+                        <path d="M24.4,0.6 L46,37.8"></path>
+                        <path d="M24.4,0.6 L47.5,36.9"></path>
+                        <path d="M24.4,0.6 L48.5,35.4"></path>
+                        <path d="M24.4,0.6 L35.1,39.5"></path>
+                        <path d="M24.4,0.6 L33.5,39.2"></path>
+                        <path d="M24.4,0.6 L32,38.8"></path>
+                        <path d="M24.4,0.6 L30.4,38.3"></path>
+                        <path d="M24.4,0.6 L28.8,37.7"></path>
+                        <path d="M24.4,0.6 L27.3,37.1"></path>
+                        <path d="M24.4,0.6 L25.9,36.3"></path>
+                        <path d="M24.4,0.6 L24.4,35.5"></path>
+                        <path d="M24.4,0.6 L22.5,34.3"></path>
+                        <path d="M24.4,0.6 L20.7,33.1"></path>
+                        <path d="M24.4,0.6 L19,31.9"></path>
+                        <path d="M24.4,0.6 L17.5,30.6"></path>
+                        <path d="M24.4,0.6 L16,29.3"></path>
+                        <path d="M24.4,0.6 L14.6,28"></path>
+                        <path d="M24.4,0.6 L13.4,26.8"></path>
+                        <path d="M24.4,0.6 L12.2,25.5"></path>
+                        <path d="M24.4,0.6 L11,24.3"></path>
+                        <path d="M24.4,0.6 L9.8,22.8"></path>
+                        <path d="M24.4,0.6 L8.4,21.1"></path>
+                        <path d="M24.4,0.6 L6.9,19.1"></path>
+                        <path d="M24.4,0.6 L5.3,16.8"></path>
+                        <path d="M24.4,0.6 L3.6,14.1"></path>
+                        <path d="M24.4,0.6 L1.8,11"></path>
+                        <path d="M24.4,0.6 L0.3,7.5"></path>
                     </g>
                 </g>
             </g>

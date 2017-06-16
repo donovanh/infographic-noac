@@ -5,11 +5,24 @@
 /* General animations */
 
 .fade-up {
+  opacity: 0;
   transform: translateY(18px);
   transition: all .5s ease-out;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+
+.fade-zoom {
+  opacity: 0;
+  transform: scale(.8);
+  transition: all .5s cubic-bezier(0,1.5,1,1);
+}
+
 .is-visible {
+  opacity: 1;
   transform: translateY(0) !important;
 }
 
@@ -23,45 +36,88 @@
     }
 
     .book-orange {
-      animation-delay: 1.4s;
+      animation-delay: 3.4s;
     }
 
     .book-red {
-      animation-delay: 2s;
+      animation-delay: 4s;
     }
 
     .book-grey {
-      animation-delay: 2.3s;
+      animation-delay: 4.3s;
     }
 
     .book-yellow {
-      animation-delay: 2.5s;
+      animation-delay: 4.5s;
     }
 
     .book-green {
-      animation-delay: 2.7s;
+      animation-delay: 4.7s;
     }
 
     .book-blue {
-      animation-delay: 2.8s;
+      animation-delay: 4.8s;
     }
   }
 }
 
 /* Top image animations */
 
-.ground {
+.ground,
+.front-tree,
+.back-tree,
+.library-building,
+.book-roof {
   transform: translateY(-500px);
+}
+
+.book-roof-leaves {
+  opacity: 0;
+  transform-origin: 100px 90px;
+  transform: rotateZ(-65deg);
+}
+
+.front-tree-shadow,
+.back-tree-shadow,
+.library-building-shadow {
+  opacity: 0;
+  transform: translateY(-200px) translateX(200px);
 }
 
 .is-visible {
   .ground {
-    animation: no-transform 1s .5s cubic-bezier(0,1,.1,1) forwards;
+    animation: no-transform .7s .5s cubic-bezier(0,1.2,.1,1) forwards;
+  }
+  .front-tree,
+  .front-tree-shadow {
+    animation: no-transform .7s 1s cubic-bezier(0,1.2,.1,1) forwards;
+  }
+  .back-tree,
+  .back-tree-shadow {
+    animation: no-transform .7s 1.5s cubic-bezier(0,1.2,.1,1) forwards;
+  }
+  .library-building,
+  .library-building-shadow {
+    animation: no-transform .7s 2s cubic-bezier(0,1.2,.1,1) forwards;
+  }
+  .book-roof {
+    animation: no-transform .7s 2.5s cubic-bezier(0,1,.1,1) forwards;
+  }
+  .book-roof-leaves {
+    animation: no-transform 2s 3s cubic-bezier(0,1.2,.1,1) forwards;
   }
 }
 
+@keyframes spin {
+  to {
+    transform: rotateZ(260deg);
+  }
+}
+
+
 @keyframes no-transform {
   to {
+    opacity: 1;
     transform: none;
   }
 }
@@ -94,9 +150,14 @@
   z-index: 0;
 }
 
-.top-image-container svg, .books-container svg {
-  width: 420px;
-  height: 525px;
+.top-image-container svg {
+  height: 625px;
+  width: 900px;
+}
+
+.books-container svg {
+  height: 625px;
+  width: 900px;
 }
 
 .books-container {

@@ -14,11 +14,11 @@
       <div class="books-container" id="books-container"></div>
     </header>
     <main>
-      <section class="stats flex-grid">
+      <section class="stats show-on-scroll fade-in flex-grid">
         <div class="col">
           <div class="stats-heading">&nbsp;</div>
           <div class="stats-body">
-            <h1 class="stats-books-borrowed-total show-on-scroll fade-up">18,188,339</h1>
+            <h1 class="stats-books-borrowed-total show-on-scroll fade-up count-up" style="transition-delay: .6s">18,188,339</h1>
             <p class="stats-subtitle">library items borrowed over the course of the year, nationally</p>
           </div>
         </div>
@@ -28,16 +28,16 @@
             <h2 class="stats-heading-content">Leitrim</h2>
           </div>
           <div class="stats-body">
-            <h1 class="stats-books-visits-per-head show-on-scroll fade-up">5.64</h1>
+            <h1 class="stats-books-visits-per-head show-on-scroll fade-up count-up" style="transition-delay: .8s">5.64</h1>
             <p class="stats-subtitle">library visits per head of population</p>
           </div>
         </div>
       </section>
-      <section class="info flex-grid">
+      <section class="info show-on-scroll fade-in flex-grid">
         <div class="col">
-          <div class="info-icon icon-visits-per-head show-on-scroll fade-up"></div>
-          <h4 class="info-subtitle">Number of Library Visits per Head of Population (based on 2016 Census)</h4>
-          <article id="map1-container" class="show-on-scroll">
+          <div class="info-icon icon-visits-per-head show-on-scroll fade-in" style="transition-delay: .2s"></div>
+          <h4 class="info-subtitle show-on-scroll fade-in" style="transition-delay: .3s">Number of Library Visits per Head of Population (based on 2016 Census)</h4>
+          <article id="map1-container" class="show-on-scroll fade-zoom" style="transition-delay: .5s">
             <div class="info-map" id="map1">
               <noscript>
                 <img src="images/map1.png">
@@ -53,9 +53,9 @@
           </article>
         </div>
         <div class="col">
-          <div class="info-icon icon-items-issued show-on-scroll fade-up"></div>
-          <h4 class="info-subtitle">Number of Items Issued to<br>Borrowers in the Year</h4>
-          <article id="map2-container" class="show-on-scroll">
+          <div class="info-icon icon-items-issued show-on-scroll fade-in" style="transition-delay: .4s"></div>
+          <h4 class="info-subtitle show-on-scroll fade-in" style="transition-delay: .5s">Number of Items Issued to<br>Borrowers in the Year</h4>
+          <article id="map2-container" class="show-on-scroll fade-zoom" style="transition-delay: .7s">
             <div class="info-map" id="map2">
               <noscript>
                 <img src="images/map2.png">
@@ -71,9 +71,9 @@
           </article>
         </div>
         <div class="col">
-          <div class="info-icon icon-cost-per-capita show-on-scroll fade-up"></div>
-          <h4 class="info-subtitle">Cost per Capita<br>(based on 2016 Census) (€)</h4>
-          <article id="map3-container"  class="show-on-scroll">
+          <div class="info-icon icon-cost-per-capita show-on-scroll fade-in" style="transition-delay: .6s"></div>
+          <h4 class="info-subtitle show-on-scroll fade-in" style="transition-delay: .7s">Cost per Capita<br>(based on 2016 Census) (€)</h4>
+          <article id="map3-container" class="show-on-scroll fade-zoom" style="transition-delay: .9s">
             <div class="info-map" id="map3">
               <noscript>
                 <img src="images/map3.png">
@@ -89,10 +89,10 @@
           </article>
         </div>
       </section>
-      <section class="data-table show-on-scroll">
+      <section class="data-table">
         <table width="100%">
           <thead>
-            <tr>
+            <tr class="show-on-scroll fade-up">
               <th>Authority</th>
               <th>Number of Library Visits per Head of Population</th>
               <th>Number of Items Issued to Borrowers in the Year</th>
@@ -101,14 +101,14 @@
           </thead>
           <tbody id="dynamic-data-table"></tbody>
           <tfoot>
-            <tr>
+            <tr class="show-on-scroll fade-up">
               <th>Total</th>
               <td></td>
               <td class="total">18,188,339</td>
             </tr>
           </tfoot>
         </table>
-        <p>*Note: Galway County Council collects library sta s cs on behalf of Galway City Council, and these are presented as combined statistics.</p>
+        <p>*Note: Galway County Council collects library statistics on behalf of Galway City Council, and these are presented as combined statistics.</p>
       </section>
     </main>
     <script src="./javascripts/vendor/jquery-3.1.1.min.js"></script>
@@ -116,9 +116,12 @@
     <script src="./javascripts/loadsvg.js"></script>
     <script src="./javascripts/maps.js"></script>
     <script>
-    // Load in the header images to be animated
-    loadSvg("#top-image-container", "top_image", "top_image");
-    loadSvg("#books-container", "books", "books");
+      // Load in the header images to be animated
+      loadSvg("#top-image-container", "top_image", "top_image");
+      loadSvg("#books-container", "books", "books");
+
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+    <script src="./javascripts/animateNumbers.js"></script>
   </body>
 </html
