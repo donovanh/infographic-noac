@@ -28,11 +28,14 @@
 
 /* Book animations */
 
+.books-container .book {
+  opacity: 0;
+}
+
 .is-visible {
   .books-container {
     .book {
       animation: show-book .8s cubic-bezier(0,1,1,1) forwards;
-      opacity: 0;
     }
 
     .book-orange {
