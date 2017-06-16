@@ -423,7 +423,7 @@ footer li:first-child::before {
   font-size: 30pt;
   font-weight: 900;
   margin-top: 0;
-  padding-top: 220px;
+  padding-top: 240px;
 
   font-variant-numeric: oldstyle-nums;
 }
