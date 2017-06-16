@@ -422,6 +422,7 @@ footer li:first-child::before {
   font-family: 'Lato Black', sans-serif;
   font-size: 30pt;
   font-weight: 900;
+  margin-top: 0;
   padding-top: 220px;
 
   font-variant-numeric: oldstyle-nums;
@@ -436,6 +437,7 @@ footer li:first-child::before {
 
 header {
   height: 540px;
+  margin-top: 0;
 }
 
 .page-title {

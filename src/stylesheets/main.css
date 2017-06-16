@@ -181,6 +181,7 @@
   font-size: 30pt;
   padding-top: 220px;
   font-variant-numeric: oldstyle-nums;
+  margin-top: 0;
 }
 
 .legend-number {
@@ -191,6 +192,7 @@
 
 header {
   height: 540px;
+  margin-top: 0;
 }
 
 .page-title {
